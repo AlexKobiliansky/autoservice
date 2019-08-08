@@ -1,0 +1,36 @@
+.s-saying
+  color: #fff
+  background-color: #0295F3
+  h2
+    font-size: 36px
+    text-align: center
+    margin-bottom: 0
+  .left-part
+    background-color: $text
+    height: 100%
+    padding-top: 55px
+    margin-right: 30px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      background-color: $text
+      height: 100%
+      width: calc((100vw - 1180px)/2)
+      right: 100%
+      top: 0
+    &:after
+      content: ''
+      position: absolute
+      background-color: $text
+      width: 60px
+      height: 100%
+      right: -22px
+      top: 0
+      transform: skewX(-11deg)
+      z-index: 2
+  .right-part
+    padding: 40px 0 50px
+    background-image: url('../img/bg-saying.png')
+    background-repeat: no-repeat
+    background-position: left top
