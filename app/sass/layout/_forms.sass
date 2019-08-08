@@ -1,0 +1,72 @@
+form
+  label
+    display: block
+    margin-bottom: 11px
+    &.has-error
+      .svg
+        fill: red
+  input
+    width: 100%
+    font-size: 16px
+    padding: 13px 26px
+    line-height: 19px
+    &.error
+      color: red!important
+      border-color: red!important
+      &::placeholder
+        color: red
+  .help-block
+    display: none
+
+.intro-form
+  position: absolute
+  width: 380px
+  height: 395px
+  top: -177px
+  right: 0
+  font-size: 14px
+  h3
+    font-size: 22px
+    margin-bottom: 12px
+  h4
+    font-size: 16px
+  li
+    position: relative
+    padding-left: 13px
+    line-height: 1.2
+    margin-bottom: 12px
+    &:before
+      content: ''
+      position: absolute
+      width: 4px
+      height: 4px
+      background-color: #fff
+      left: 0
+      top: 6px
+  ul
+    margin-bottom: 19px
+  .form-labels-wrap
+    margin-top: 27px
+
+.dark-form
+  background-color: rgba(0, 0, 0, 0.8)
+  color: #fff
+  padding: 25px 50px 35px
+  label
+    position: relative
+    .svg
+      position: absolute
+      right: 28px
+      top: calc(50% - 7px)
+  input
+    background-color: transparent
+    border: 1px solid #fff
+    color: #fff
+    padding-right: 50px
+    &::placeholder
+      color: #fff
+  .svg
+    fill: #fff
+  .btn
+    display: block
+    width: 100%

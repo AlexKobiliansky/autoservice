@@ -18,6 +18,36 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .intro-slide
+    margin-bottom: 250px
+    background-position: left
+
+  .intro-form
+    position: relative
+    top: 94px
+    width: auto
+    height: auto
+    background-color: #333
+    .form-ul-wrap
+      display: flex
+      &>div
+        width: 50%
+    .form-labels-wrap
+      display: flex
+      justify-content: space-between
+      label, .btn
+        width: calc(33% - 8px)
+      .btn
+        height: 47px
+        &:after
+          display: none
+        .svg
+          display: none
+
+  .intro-next, .intro-prev, .intro-count
+    bottom: 288px
+
   .mid-line
     display: none
 
@@ -26,6 +56,27 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .intro-form
+    display: none!important
+
+  .intro-slide
+    margin-bottom: 0
+    height: 395px
+    background-position-x: -200px
+    &-title
+      font-size: 22px
+  .intro-next, .intro-prev, .intro-count
+    bottom: 38px
+  .intro-prev
+    left: 10px
+  .intro-next
+    left: 50px
+  .intro-count
+    left: auto
+    right: 10px
+
+
   .serv-mobile-mnu
     li
       a

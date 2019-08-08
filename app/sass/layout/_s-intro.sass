@@ -1,0 +1,78 @@
+.s-intro
+  background-color: #cfcfd1
+
+.intro-container
+  max-width: 1440px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  position: relative
+
+.intro-slider
+  position: relative
+
+.intro-slide
+  height: 395px
+  padding-top: 177px
+  +bg-cover
+  &-title
+    color: #fff
+    text-transform: uppercase
+    font-size: 24px
+    font-family: "LatoItalic", san-serif
+    max-width: 320px
+    line-height: 1.1
+    padding: 9px 29px 15px 32px
+    background-color: rgba(0, 0, 0, 0.78)
+  &-accent
+    background-color: #EC1D23
+    color: #fff
+    font-size: 20px
+    line-height: 1.2
+    padding: 12px 40px
+    text-align: center
+    display: inline-block
+    transform: skewX(-14deg)
+    position: relative
+    top: -10px
+    left: 18px
+    font-family: "LatoItalic", san-serif
+  .container
+    position: relative
+
+
+
+.intro-prev, .intro-next
+  width: 33px
+  height: 33px
+  background-color: #333
+  +mt(.3s)
+  background-image: url('../img/icons/arrow-down-white.svg')
+  background-size: 15px 11px
+  background-repeat: no-repeat
+  background-position: center
+  border: none
+  cursor: pointer
+  position: absolute
+  z-index: 2
+  bottom: 38px
+  &:hover
+    opacity: .8
+
+.intro-prev
+  transform: rotate(90deg)
+  left: 130px
+
+.intro-next
+  transform: rotate(-90deg)
+  left: 170px
+
+.intro-count
+  position: absolute
+  bottom: 38px
+  left: 430px
+  color: #fff
+  font-size: 18px
+  .total
+    font-size: 16px
+    color: lightgray

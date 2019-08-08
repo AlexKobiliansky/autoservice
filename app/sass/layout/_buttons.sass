@@ -1,0 +1,43 @@
+.btn
+  display: inline-block
+  cursor: pointer
+  font-size: 16px
+  text-transform: uppercase
+  +mt(.3s)
+  border-width: 1px
+  border-style: solid
+  padding: 11px 26px
+  position: relative
+  white-space: nowrap
+
+.btn-blue
+  color: #fff
+  background-color: $accent
+  border-color: $accent
+
+.btn-arrow
+  .svg
+    position: absolute
+    z-index: 3
+    +mt(.3s)
+    right: -30px
+    top: calc(50% - 7px)
+    opacity: 0
+  &:hover
+    .svg
+      opacity: 1
+      right: 18px
+
+.btn-hover-dark
+  &:after
+    content: ''
+    position: absolute
+    width: 62px
+    height: 100%
+    top: 0
+    right: 0
+    background-color: $accent
+    +mt(.3s)
+  &:hover
+    background-color: #09090B
+    padding-right: 88px
