@@ -140,7 +140,9 @@ $(document).ready(function(){
         scrollToTopOnError: false
     });
 
-    $("form").submit(function() { //Change
+    $('.form-select').styler();
+
+    $(".contact-form").submit(function() { //Change
         var th = $(this);
 
         $.ajax({

@@ -5,6 +5,8 @@ form
     &.has-error
       .svg
         fill: red
+  select
+    width: 100%
   input
     width: 100%
     font-size: 16px
@@ -70,3 +72,48 @@ form
   .btn
     display: block
     width: 100%
+
+.grey-form
+  .jq-selectbox
+    width: 100%
+    font-size: 16px
+    box-shadow: none
+    &.opened
+      .jq-selectbox__trigger-arrow
+        transform: rotate(180deg)
+  .jq-selectbox__select
+    box-shadow: none
+    font-size: 16px
+    padding: 19px 26px
+    height: auto
+    line-height: 1
+    color: #8E8E8E
+    background: #fff
+    border-radius: 0
+    border: 1px solid #C4C4C4!important
+  .jq-selectbox__trigger
+    border: none
+  .jq-selectbox__trigger-arrow
+    border: none
+    width: 10px
+    height: 6px
+    background-image: url('../img/icons/arrow-down-grey.svg')
+    right: 26px
+    top: calc(50% - 3px)
+  .jq-selectbox__dropdown
+    border-radius: 0
+
+.choose-form
+  span
+    display: block
+    margin-bottom: 6px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+  label, .btn
+    width: calc(33% - 8px)
+  .btn
+    height: 56px
+    margin-top: 28px
+  .jq-selectbox__select
+    border-color: transparent!important

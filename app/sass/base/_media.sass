@@ -25,6 +25,15 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .choose-form
+    .form-labels-wrap
+      flex-wrap: wrap
+    label
+      width: calc(50% - 10px)
+    .btn
+      margin-top: 9px
+
+      width: calc(50% - 10px)
 
   .intro-slide
     margin-bottom: 250px
@@ -60,12 +69,24 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .choose-form
+    label, .btn
+      width: 100%
+
   .s-marks
     h2
       font-size: 24px
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-choose-serv
+    padding: 50px 0
+
+  .choose-form
+    .jq-selectbox__select
+      font-size: 14px
 
   .marks-slider
     .owl-nav

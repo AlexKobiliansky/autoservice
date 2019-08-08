@@ -41,3 +41,21 @@
   &:hover
     background-color: #09090B
     padding-right: 88px
+
+.btn-hover-blue
+  &:after
+    content: ''
+    position: absolute
+    width: 62px
+    height: 100%
+    top: 0
+    right: 0
+    background-color: transparent
+    border-left: 1px solid transparent
+    +mt(.3s)
+  .svg
+    fill: #fff
+  &:hover
+    padding-right: 88px
+    &:after
+      border-color: #fff
