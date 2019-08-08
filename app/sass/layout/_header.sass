@@ -45,6 +45,7 @@
   padding: 12px 0
   top: 59px
   display: none
+  z-index: 100
   li
     line-height: 1
     a
@@ -129,3 +130,201 @@
     z-index: 2
     &:hover
       color: $accent
+
+.bottom-line
+  background-color: $accent-grey
+  position: relative
+
+.serv-mnu
+  li
+    position: relative
+    ul
+      position: absolute
+      background-color: rgba(48, 48, 49, 0.9)
+      width: 235px
+      padding: 20px
+      line-height: 1
+      top: 100%
+      right: 0
+      border-top: 2px solid $accent
+      +mt(.3s)
+      display: block
+      opacity: 0
+      pointer-events: none
+      a
+        color: #fff
+        font-family: "Lato", san-serif
+        font-size: 14px
+        text-transform: none
+        line-height: 17px
+        padding: 0
+        margin-bottom: 15px
+        &:after
+          display: none
+      li:last-child
+        a
+          margin-bottom: 0
+    &:hover
+      ul
+        opacity: 1
+        pointer-events: all
+      a
+        &:before
+          background-image: url('../img/icons/arrow-down-accent.svg')!important
+  ul
+    display: flex
+    justify-content: space-between
+    line-height: 1
+  li:first-child
+    a
+      padding-left: 0
+  li:last-child
+    a
+      padding-right: 0
+      &:after
+        display: none
+    &.menu-item-has-children
+      &>a
+        &:before
+          left: calc(50% + 5px)
+  li.menu-item-has-children
+    &>a
+      &:before
+        content: ''
+        position: absolute
+        width: 10px
+        height: 6px
+        background-image: url('../img/icons/arrow-down-white.svg')
+        +bg-cover
+        bottom: 6px
+        left: calc(50% - 5px)
+        +mt(.3s)
+  a
+    display: inline-block
+    color: #fff
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 17px
+    font-family: "LatoItalic", san-serif
+    padding: 15px 30px
+    position: relative
+    vertical-align: middle
+    +mt(.3s)
+    &:after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      background-color: #cfcfd1
+      right: 0
+      top: 0
+      transform: rotate(11deg)
+    &:hover
+      color: $accent
+
+.bot-line-info
+  color: #fff
+  font-size: 14px
+  text-align: right
+  p
+    margin-bottom: 0
+  a
+    color: #fff
+    font-size: 20px
+    +mt(.3s)
+    &:hover
+      color: $accent
+
+.toggle-serv-mnu
+  display: inline-block
+  padding: 10px
+  border: 1px solid #C4C4C4
+  width: 53px
+  height: 39px
+  +mt(.3s)
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 8px
+  span:after
+    top: 16px
+  span
+    position: relative
+    display: block
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #c4c4c4
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+  &.on span
+    background-color: transparent
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+  &.on
+    border-color: transparent
+
+.bot-mobile-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 0
+
+.serv-mobile-mnu
+  background-color: #c4c4c4
+  position: absolute
+  left: 0
+  top: 100%
+  z-index: 99
+  display: none
+  width: 100%
+  ul
+    padding: 25px 0
+  li
+    position: relative
+    a
+      font-size: 16px
+      display: inline-block
+      color: $text
+      font-family: "LatoItalic", san-serif
+      text-transform: uppercase
+      margin-bottom: 35px
+      padding-right: 30px
+      position: relative
+      +mt(.3s)
+    &:last-child
+      a
+        margin-bottom: 0
+      &.menu-item-has-children
+        ul
+          margin-top: 10px
+          top: 0
+
+    &.menu-item-has-children
+      &>a
+        &:after
+          content: ''
+          position: absolute
+          width: 10px
+          height: 6px
+          background-image: url('../img/icons/arrow-down-text.svg')
+          right: 0
+          top: calc(50% - 3px)
+        &.opened
+          &:after
+            transform: rotate(180deg)
+    ul
+      padding: 0
+      display: none
+      position: relative
+      top: -25px
+      li
+        a
+          font-size: 12px
+          padding-left: 30px
+          margin-bottom: 10px!important
+
