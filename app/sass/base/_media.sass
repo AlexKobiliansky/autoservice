@@ -5,9 +5,21 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .mid-line-info
+    transform: none
+    a, p
+      transform: none
+    &:after
+      width: calc((100vw - 942px)/2)
+      transform: none
+    &:before
+      left: -20px
+      transform: skewX(-10deg)
 
 // ≥992px
 +media-breakpoint-down(md)
+  .mid-line
+    display: none
 
 // ≥768px
 +media-breakpoint-down(sm)

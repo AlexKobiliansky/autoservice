@@ -55,7 +55,6 @@
       margin: 13px 0
       color: #8AA4C1
 
-
 .toggle-mnu
   display: block
   width: 24px
@@ -85,3 +84,48 @@
     transform: rotate(45deg) translate(-2px, 0px)
   &.on span:after
     transform: rotate(-45deg) translate(4px, -6px)
+
+.mid-line
+  background-color: #E6E6E8
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+.mid-line-info
+  display: inline-block
+  text-align: right
+  background-color: #cfcfd1
+  padding: 22px 0 27px 100px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: calc((100vw - 1180px)/2)
+    left: 100%
+    top: 0
+    height: 100%
+    background-color: #cfcfd1
+  &:before
+    content: ''
+    position: absolute
+    width: 30px
+    left: -20px
+    top: 0
+    height: 100%
+    background-color: #cfcfd1
+    transform: skewX(-10deg)
+
+  p
+    margin-bottom: 0
+    position: relative
+    z-index: 2
+  a
+    display: inline-block
+    font-weight: bold
+    color: $text
+    +mt(.3s)
+    font-size: 20px
+    position: relative
+    z-index: 2
+    &:hover
+      color: $accent
