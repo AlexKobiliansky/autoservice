@@ -16,6 +16,13 @@
       left: -20px
       transform: skewX(-10deg)
 
+  .marks-slider
+    .owl-nav
+      button.owl-prev
+        left: calc(50% - 180px)
+      button.owl-next
+        right: calc(50% - 180px)
+
 // ≥992px
 +media-breakpoint-down(md)
 
@@ -53,9 +60,23 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .s-marks
+    h2
+      font-size: 24px
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .marks-slider
+    .owl-nav
+      button.owl-prev
+        left: calc(50% - 60px)
+      button.owl-next
+        right: calc(50% - 40px)
+
+  .s-marks
+    h2
+      font-size: 20px
 
   .intro-form
     display: none!important

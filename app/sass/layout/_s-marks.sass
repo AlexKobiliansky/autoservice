@@ -1,0 +1,58 @@
+.s-marks
+  padding: 45px 0 55px
+  h2
+    font-size: 30px
+    text-transform: uppercase
+    text-align: center
+    font-family: "LatoItalic", san-serif
+    line-height: 1.1
+    margin-bottom: 38px
+    font-weight: normal
+
+.mark-slide
+  &-img
+    margin-bottom: 5px
+  &-title
+    font-size: 12px
+    text-align: center
+    text-transform: uppercase
+
+.marks-slider
+  position: relative
+  .owl-dots
+    position: absolute
+    width: 100%
+    left: 0
+    bottom: -45px
+    text-align: center
+    button.owl-dot
+      width: 16px
+      height: 2px
+      background-color: #d0d0d0
+      margin: 0 5px
+      +mt(.3s)
+      &.active
+        width: 48px
+        background-color: #4B4E58
+  .owl-nav
+    position: absolute
+    width: 100%
+    bottom: -24px
+    button.owl-next, button.owl-prev
+      display: inline-block
+      padding: 2px 4px!important
+      position: absolute
+      cursor: pointer
+      z-index: 2
+      .svg
+        +mt(.3s)
+        fill: $text
+      &:hover
+        .svg
+          fill: $accent
+    button.owl-prev
+      transform: rotate(90deg)
+      left: calc(50% - 100px)
+    button.owl-next
+      transform: rotate(-90deg)
+      right: calc(50% - 100px)

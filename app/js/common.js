@@ -43,6 +43,40 @@ $(document).ready(function(){
     });
 
 
+    $('.marks-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        margin: 20,
+        dots: true,
+        autoHeight: false,
+        slideBy: 12,
+        navText: ["<img class='svg' src='../img/icons/arrow.svg'>","<img class='svg' src='../img/icons/arrow.svg'>"],
+        responsive: {
+            0: {
+                items: 3,
+                dots: false
+            },
+            400: {
+                items: 4,
+                dots: false
+            },
+            480: {
+                items: 6,
+                dots: true
+            },
+            992: {
+                items: 9,
+                dots: true
+            },
+            1200: {
+                items: 12,
+                dots: true
+            }
+
+        }
+    });
+
+
 
 
     $('img.svg').each(function(){
