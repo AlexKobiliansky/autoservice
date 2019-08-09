@@ -115,6 +115,14 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .s-prices
+    .notice
+      display: block
+
+  table.prices
+    tr:first-child
+      span
+        display: none
 
   .s-saying
     .left-part
@@ -135,6 +143,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  table.prices
+    td:nth-child(2)
+      width: 135px
 
   .s-saying
     .left-part
