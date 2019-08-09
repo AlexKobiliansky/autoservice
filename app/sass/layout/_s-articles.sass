@@ -1,0 +1,44 @@
+.s-articles
+  background-color: #f7f7f7
+  padding: 60px 0
+  .btn-wrap
+    margin-top: 40px
+    text-align: center
+    .btn
+      max-width: 320px
+      width: 100%
+.article-item
+  margin-bottom: 20px
+  &-img
+    height: 190px
+    +bg-cover
+    position: relative
+    +mt(.3s)
+    display: flex
+    justify-content: center
+    align-items: center
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(#000, 0.5)
+      +mt(.3s)
+      opacity: 0
+  .btn
+    position: relative
+    z-index: 2
+    opacity: 0
+  &:hover
+    .article-item-img
+      &:after
+        opacity: 1
+      .btn
+        opacity: 1
+  &-desc
+    background-color: #fff
+    font-size: 22px
+    line-height: 26px
+    padding: 18px 31px
