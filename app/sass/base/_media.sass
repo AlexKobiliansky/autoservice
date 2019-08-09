@@ -5,6 +5,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .why-item
+    display: block
+    &-icon
+      display: block
+    &-content
+      display: block
+      padding-left: 0
+
   .s-index-text
     .text-wrap
       &.pr
@@ -50,6 +59,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-why
+    padding-bottom: 40px
 
   .btn-arrow
     .svg
@@ -115,6 +127,13 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-why
+    background-size: cover
+
+  .why-item
+    margin-bottom: 30px
+
   .s-prices
     .notice
       display: block
