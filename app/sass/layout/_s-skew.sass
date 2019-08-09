@@ -1,0 +1,47 @@
+.s-skew
+  position: relative
+
+.skew-wrap
+  display: flex
+
+.skew-left
+  width: 60%
+  background-image: url('../img/bg-skew.jpg')
+  +bg-cover
+  color: #fff
+  position: relative
+  top: -40px
+  &:after
+    content: ''
+    position: absolute
+    width: 165px
+    height: 100%
+    right: -70px
+    top: 40px
+    transform: skewX(-14deg)
+    z-index: 2
+    background-color: $accent
+  &:before
+    content: ''
+    position: absolute
+    width: 30px
+    height: 40px
+    background-color: #eee
+    top: 0
+    right: -21px
+    z-index: 2
+    transform: skewX(-14deg)
+  &-content
+    margin-left: calc((100vw - 1200px)/2)
+    padding-right: 365px
+    padding-top: 88px
+    padding-bottom: 155px
+
+.skew-right
+  width: 40%
+  background-color: $accent
+  color: #fff
+  &-content
+    margin-right: calc((100vw - 1300px)/2)
+    padding-top: 75px
+

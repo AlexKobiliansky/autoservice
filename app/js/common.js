@@ -141,6 +141,7 @@ $(document).ready(function(){
     });
 
     $('.form-select').styler();
+    $('form .checkbox').styler()
 
     $(".contact-form").submit(function() { //Change
         var th = $(this);
