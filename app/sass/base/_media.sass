@@ -6,6 +6,22 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-examples
+    .btn-wrap
+      margin-top: 30px
+
+  .ex-slide
+    justify-content: space-between
+    &-content
+      width: 50%
+    &-img
+      width: calc(50% - 20px)
+      transform: none
+      padding: 0
+      &:before, &:after
+        display: none
+
+
   .skew-wrap
     display: block
     .skew-left
@@ -83,6 +99,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .examples-slider
+    margin-left: 0
+    .intro-prev, .intro-next
+      display: none!important
+
+  .ex-count
+    display: none
+
   .skew-wrap
     .skew-left
       &-content
@@ -114,8 +138,6 @@
         display: none
     .right-part
       padding: 35px 120px 40px
-
-
 
   .choose-form
     .form-labels-wrap
@@ -161,6 +183,26 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .examples-slider
+    .slick-list
+      margin: 0 -10px
+
+  .ex-slide
+    flex-direction: column-reverse
+    margin: 0 10px
+    &-img
+      width: 100%
+      height: auto
+      margin-bottom: 25px
+      .img-container
+        height: 240px
+      .ex-slide-title
+        display: block
+    &-content
+      width: 100%
+      .ex-slide-title
+        display: none
 
   .skew-wrap
     .skew-left

@@ -1,0 +1,102 @@
+.s-examples
+  padding: 60px 0
+  position: relative
+  .container
+    position: relative
+  .btn-wrap
+    margin-top: 60px
+    text-align: center
+    .btn
+      max-width: 320px
+      width: 100%
+
+.ex-count
+  position: absolute
+  font-size: 18px
+  left: 10px
+  top: 225px
+  .total
+    font-size: 16px
+
+
+.examples-slider
+  margin-left: 100px
+  .intro-prev, .intro-next
+    width: 21px
+    height: 21px
+    background-size: 8px 6px
+    bottom: auto
+    top: 195px
+  .intro-prev
+    left: -100px
+  .intro-next
+    left: -75px
+
+.ex-slide
+  display: flex!important
+  margin-right: 30px
+  padding: 10px 0
+  outline: none!important
+  &-content
+    width: 40%
+    padding-right: 30px
+  &-img
+    width: 60%
+    height: 360px
+    padding: 0 40px
+    +bg-cover
+    position: relative
+    transform: skewX(-14deg)
+    z-index: 2
+    .ex-slide-title
+      display: none
+    .img-container
+      height: 100%
+      +bg-cover
+      position: relative
+      z-index: 2
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 500px
+      height: 250px
+      background-color: $text
+      z-index: -1
+    &:before
+      left: 30px
+      bottom: -10px
+    &:after
+      right: 30px
+      top: -10px
+  &-title
+    font-size: 18px
+    font-weight: bold
+    color: $accent
+    margin-bottom: 10px
+  &-name
+    margin-bottom: 10px
+  &-desc
+    font-size: 14px
+    margin-bottom: 20px
+  &-problem
+    font-size: 14px
+    margin-bottom: 15px
+  &-cost
+    padding-top: 20px
+    font-size: 22px
+    font-weight: 700
+    position: relative
+    line-height: 1
+    &:before
+      content: ''
+      position: absolute
+      width: 300px
+      height: 1px
+      background-color: $text
+      left: 0
+      top: 0
+    span
+      font-size: 18px
+      color: $accent
+      display: inline-block
+      margin-right: 10px
