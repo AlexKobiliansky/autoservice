@@ -66,6 +66,47 @@ $(document).ready(function(){
     });
 
 
+    var $revCurrentSlide = $('#rev-count .current');
+    var $revTotalSlides = $('#rev-count .total');
+    var $revSlider = $('.reviews-slider');
+
+    $revSlider.on('init reInit afterChange', function(event, slick, revCurrentSlide, nextSlide){
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (revCurrentSlide ? revCurrentSlide : 0) + 1;
+        $revCurrentSlide.text(i);
+        $revTotalSlides.text(slick.slideCount);
+    });
+
+    $revSlider.slick({
+        infinite: true,
+        // autoplay: true,
+        // autoplaySpeed: 8000,
+        // fade: true,
+        // cssEase: 'linear',
+        adaptiveHeight: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '<button type="button" class="intro-prev"></button>',
+        nextArrow: '<button type="button" class="intro-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
 
     $('.marks-slider').owlCarousel({
         loop:true,
@@ -137,7 +178,8 @@ $(document).ready(function(){
 
     function heightses() {
 
-        if ($(window).width()>480) {
+        if ($(window).width()>=768) {
+            $('.review-slide-desc').height('auto').equalHeights();
         }
 
         $('.serv-mnu>ul>li>a').height('auto').equalHeights();
