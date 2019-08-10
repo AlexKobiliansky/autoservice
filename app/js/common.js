@@ -19,7 +19,17 @@ $(document).ready(function(){
         $(this).parents("li").find('ul').slideToggle();
         return false;
     });
+
+    $(".toggle-foot-mnu").click(function() {
+        $(this).toggleClass("on");
+        $(this).parents('.foot-col-item').find('.foot-botline').slideToggle();
+        return false;
+    });
+
     // ***** mnu-customization start *****
+
+
+
 
     var $curentSlide = $('#intro-count .current');
     var $totalSlides = $('#intro-count .total');
@@ -225,8 +235,11 @@ $(document).ready(function(){
     //******* FORMS end *******//
 
 
+});
 
 
+
+$(window).on('load', function(){
     if ($('#map').length) {
         function initMap(){
             var mapAttr = $('#map'),
@@ -262,11 +275,5 @@ $(document).ready(function(){
 
         initMap();
     }
-
-
-
-
-
-
-
 });
+
