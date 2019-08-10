@@ -1,0 +1,32 @@
+.s-page-head
+  background-color: #E5E5E5
+  padding: 11px 0 40px
+  .section-title
+    margin-bottom: 0
+    &:after
+      height: 3px
+
+.breadcrumbs
+  font-size: 14px
+  margin-bottom: 75px
+  a
+    display: inline-block
+    color: $text
+    +mt(.3s)
+    position: relative
+    margin-right: 20px
+    &:after
+      content: '/'
+      position: relative
+      left: 12px
+      color: $text
+    &:first-child
+      color: $accent
+    &:last-child
+      margin-right: 0
+      color: #c4c4c4
+      pointer-events: none
+      &:after
+        display: none
+    &:hover
+      color:  $accent

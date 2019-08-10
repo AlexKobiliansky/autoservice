@@ -1,0 +1,56 @@
+.s-contacts
+  padding: 30px 0 50px
+  position: relative
+  h3
+    font-size: 24px
+    margin-bottom: 25px
+
+.contacts-wrap
+  display: flex
+  flex-wrap: wrap
+
+.contact-item
+  width: 50%
+  margin-bottom: 35px
+  padding-left: 25px
+  position: relative
+  &-title
+    font-size: 18px
+    line-height: 22px
+    font-weight: 700
+    margin-bottom: 8px
+    i
+      position: absolute
+      top: 0
+      left: 0
+      color:  $accent
+  &-desc
+    a
+      color: $text
+      +mt(.3s)
+      &:hover
+        color: $accent
+
+.contact-socials
+  .title
+    font-size: 18px
+    line-height: 22px
+    margin-bottom: 12px
+    font-weight: 700
+  .contact-soc
+    display: inline-block
+    margin-right: 10px
+    .svg
+      +mt(.3s)
+      fill: $text
+    &:hover
+      .svg
+        fill: $accent
+
+.contacts-img
+  width: 40%
+  height: 100%
+  position: absolute
+  right: 0
+  top: 0
+  +bg-cover
