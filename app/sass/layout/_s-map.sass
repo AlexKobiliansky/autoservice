@@ -1,0 +1,32 @@
+.s-map
+  position: relative
+
+.map-block
+  position: absolute
+  width: 50%
+  height: 100%
+  top: 0
+  right: -50px
+  background-color: rgba(1, 1, 1, 0.75)
+  color: #fff
+  padding: 70px 90px
+  transform: skewX(-14deg)
+  h2
+    font-size: 48px
+    font-weight: bold
+    text-transform: none
+    font-family: "Lato", san-serif
+
+.map-item
+  font-size: 18px
+  a
+    color: #fff
+    +mt(.3s)
+    &:hover
+      color: $accent
+  &-title
+    font-size: 22px
+    margin-bottom: 3px
+
+.map-block-wrap
+  transform: skewX(14deg)
