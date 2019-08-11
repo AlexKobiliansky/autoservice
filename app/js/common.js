@@ -219,6 +219,7 @@ $(document).ready(function(){
             $('.review-slide-desc').height('auto').equalHeights();
             $('.article-item-desc').height('auto').equalHeights();
             $('.service-slide-title').height('auto').equalHeights();
+            $('.other-item-desc').height('auto').equalHeights();
         }
 
         $('.serv-mnu>ul>li>a').height('auto').equalHeights();

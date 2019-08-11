@@ -1,3 +1,31 @@
 .s-text
   background-color: #f7f7f7
   padding-bottom: 60px
+
+.shares
+  text-align: center
+  margin-top: 30px
+  color: #6D6E71
+  &-wrap
+    margin-top: 15px
+    display: flex
+    justify-content: center
+
+.share-item
+  font-size: 18px
+  +mt(.3s)
+  background-color: transparent
+  border: 2px solid #7E8083
+  width: 33px
+  height: 33px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 3px
+  i
+    +mt(.3s)
+    color: #7E8083
+  &:hover
+    background-color: #7E8083
+    i
+      color: #fff

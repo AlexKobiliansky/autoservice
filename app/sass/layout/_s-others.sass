@@ -1,0 +1,40 @@
+.s-others
+  padding: 0 0 70px
+  background-color: #f7f7f7
+
+.other-item
+  margin-bottom: 20px
+  &-img
+    height: 190px
+    +bg-cover
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0,0,0,.5)
+      transition: all .3s ease
+      opacity: 0
+    .btn
+      position: relative
+      z-index: 2
+      opacity: 0
+  &:hover
+    .other-item-img
+      &:after
+        opacity: 1
+      .btn
+        opacity: 1
+  &-desc
+    background-color: #fff
+    font-size: 18px
+    line-height: 25px
+    padding: 25px 15px 30px
+
+
