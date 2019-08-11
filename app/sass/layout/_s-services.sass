@@ -1,0 +1,60 @@
+.s-services
+  background-color: #f7f7f7
+  padding: 50px 0 80px
+  h2
+    font-size: 30px
+    font-family: "LatoItalic", san-serif
+    text-align: center
+    text-transform: uppercase
+    font-weight: normal
+
+.services-slider
+  margin-top: 60px
+  .slick-list
+    margin: 0 -4px
+  .intro-prev, .intro-next
+    width: 21px
+    height: 21px
+    background-size: 8px 6px
+    bottom: -40px
+  .intro-prev
+    left: 0
+  .intro-next
+    left: 26px
+
+
+.service-slide
+  position: relative
+  padding: 0 20px 15px
+  border: 1px solid #c4c4c4
+  background-color: #fff
+  margin: 0 3px
+  &-price
+    position: absolute
+    background-color: $accent
+    top: 0
+    left: 0
+    color: #fff
+    font-size: 18px
+    font-family: "LatoItalic", san-serif
+    padding: 5px 5px 5px 15px
+    &:after
+      content: ''
+      position: absolute
+      background-color: $accent
+      transform: skewX(-14deg)
+      height: 100%
+      width: 30px
+      top: 0
+      right: -10px
+  &-icon
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 20px
+  &-title
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 19px
+  .btn
+    width: 100%
+    text-align: center

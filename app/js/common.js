@@ -116,6 +116,33 @@ $(document).ready(function(){
         ]
     });
 
+    $('.services-slider').slick({
+        infinite: true,
+        // autoplay: true,
+        // autoplaySpeed: 8000,
+        // fade: true,
+        // cssEase: 'linear',
+        adaptiveHeight: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="intro-prev"></button>',
+        nextArrow: '<button type="button" class="intro-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
 
 
     $('.marks-slider').owlCarousel({
@@ -191,6 +218,7 @@ $(document).ready(function(){
         if ($(window).width()>=768) {
             $('.review-slide-desc').height('auto').equalHeights();
             $('.article-item-desc').height('auto').equalHeights();
+            $('.service-slide-title').height('auto').equalHeights();
         }
 
         $('.serv-mnu>ul>li>a').height('auto').equalHeights();
