@@ -6,6 +6,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-scheme
+    padding-bottom: 0
+
+  .scheme-wrap
+    flex-wrap: wrap
+    justify-content: center
+
+  .scheme-item
+    width: 33%
+    margin-bottom: 50px
+
   .s-reasons
     padding-bottom: 0
 
@@ -384,6 +395,11 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .scheme-item
+    width: 100%
+    &-icon
+      margin-bottom: 10px
 
   .popup-form
     padding-left: 10px
