@@ -6,6 +6,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-intro-service
+    .container
+      padding-top: 45px
+
+  .service-img
+    margin-left: 0
+
   .contacts-img
     display: none
 
@@ -137,6 +144,28 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .service-img
+    max-width: 50%
+    background-size: contain
+    position: relative
+    left: -40px
+
+  .s-intro-service
+    h2
+      width: 50%
+    .intro-form
+      padding-top: 20px
+      width: 50%
+      position: absolute
+      .form-ul-wrap
+        display: block
+        &>div
+          width: 100%
+      .form-labels-wrap
+        display: block
+        label, .btn
+          width: 100%
+
   .examples-slider
     margin-left: 0
     .intro-prev, .intro-next
@@ -222,6 +251,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-intro-service
+    .section-title
+      width: 100%
+    .service-img
+      left: 0
+      margin-left: auto
+      margin-right: auto
+      max-width: 100%
+    .intro-form
+      position: relative
+      width: 100%
+
   .s-writeus
     padding: 40px 0
 
@@ -301,6 +342,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-intro-service
+    .intro-form.d-block
+      display: block!important
+      padding-left: 10px
+      padding-right: 10px
 
   .comment-item
     &-top
