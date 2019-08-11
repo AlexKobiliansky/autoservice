@@ -229,6 +229,7 @@ $(document).ready(function(){
     });
     heightses();
 
+    $('.preloader').fadeOut();
 
     //******* forms start *******//
 
@@ -265,8 +266,6 @@ $(document).ready(function(){
 
 
 });
-
-
 
 $(window).on('load', function(){
     if ($('#map').length) {
