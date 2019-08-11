@@ -6,6 +6,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-reasons
+    padding-bottom: 0
+
+  .reasons-wrap
+    flex-wrap: wrap
+    justify-content: center
+  .reason-item
+    width: calc(25% - 10px)
+    margin: 0 5px 50px
+
   .s-services
     padding-bottom: 40px
 
@@ -259,6 +269,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .reason-item
+    width: calc(50% - 10px)
+    &:last-child
+      margin-bottom: 25px
+
+  form
+    .halfed-wrap
+      flex-wrap: wrap
+      label
+        width: 100%
+
+
   .s-others
     padding-bottom: 30px
 
@@ -362,6 +384,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .popup-form
+    padding-left: 10px
+    padding-right: 10px
 
   .s-services
     h2

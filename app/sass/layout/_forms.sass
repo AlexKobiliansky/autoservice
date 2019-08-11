@@ -7,7 +7,7 @@ form
         fill: red
   select
     width: 100%
-  input
+  input, textarea
     width: 100%
     font-size: 16px
     padding: 13px 26px
@@ -19,6 +19,11 @@ form
         color: red
   .help-block
     display: none
+  .halfed-wrap
+    display: flex
+    justify-content: space-between
+    label
+      width: calc(50% - 10px)
 
 .intro-form
   position: absolute
@@ -73,35 +78,7 @@ form
     display: block
     width: 100%
 
-.grey-form
-  .jq-selectbox
-    width: 100%
-    font-size: 16px
-    box-shadow: none
-    &.opened
-      .jq-selectbox__trigger-arrow
-        transform: rotate(180deg)
-  .jq-selectbox__select
-    box-shadow: none
-    font-size: 16px
-    padding: 19px 26px
-    height: auto
-    line-height: 1
-    color: #8E8E8E
-    background: #fff
-    border-radius: 0
-    border: 1px solid #C4C4C4!important
-  .jq-selectbox__trigger
-    border: none
-  .jq-selectbox__trigger-arrow
-    border: none
-    width: 10px
-    height: 6px
-    background-image: url('../img/icons/arrow-down-grey.svg')
-    right: 26px
-    top: calc(50% - 3px)
-  .jq-selectbox__dropdown
-    border-radius: 0
+
 
 .choose-form
   span
@@ -143,3 +120,92 @@ form
     .jq-checkbox.checked .jq-checkbox__div
       margin-top: 4px
       border-color: #fff
+
+
+
+.grey-form
+  .jq-selectbox
+    width: 100%
+    font-size: 16px
+    box-shadow: none
+    &.opened
+      .jq-selectbox__trigger-arrow
+        transform: rotate(180deg)
+  .jq-selectbox__select
+    box-shadow: none
+    font-size: 16px
+    padding: 19px 26px
+    height: auto
+    line-height: 1
+    color: #8E8E8E
+    background: #fff
+    border-radius: 0
+    border: 1px solid #C4C4C4!important
+  .jq-selectbox__trigger
+    border: none
+  .jq-selectbox__trigger-arrow
+    border: none
+    width: 10px
+    height: 6px
+    background-image: url('../img/icons/arrow-down-grey.svg')
+    right: 26px
+    top: calc(50% - 3px)
+  .jq-selectbox__dropdown
+    border-radius: 0
+  input, textarea
+    border: 1px solid #C4C4C4
+    &::placeholder
+      color: #c4c4c4
+
+
+.popup-form
+  background-color: #F2F2F2
+  display: block
+  max-width: 780px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding: 35px 100px 40px
+  position: relative
+  h3
+    text-align: center
+  textarea
+    height: 100px
+  label
+    position: relative
+    .svg
+      position: absolute
+      right: 28px
+      top: calc(50% - 7px)
+      fill: #c4c4c4
+  input, textarea
+    padding-right: 50px
+  .agreement-label
+    text-align: center
+    font-size: 12px
+    margin-top: 20px
+    line-height: 1
+    margin-bottom: 25px
+  .checkbox
+    position: relative
+    left: 0
+  .jq-checkbox
+    width: 14px
+    height: 14px
+    border-radius: 2px
+    border: 1px solid #C4C4C4
+    top: -2px
+
+  .jq-checkbox.checked .jq-checkbox__div
+    position: relative
+    top: -15px
+  .btn-wrap
+    text-align: center
+  .jq-selectbox__select
+    font-family: "Lato", san-serif
+    color: #c4c4c4
+  .jq-selectbox.changed
+    .jq-selectbox__select
+      color: $text
+
+

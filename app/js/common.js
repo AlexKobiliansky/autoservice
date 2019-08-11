@@ -233,6 +233,18 @@ $(document).ready(function(){
 
     //******* forms start *******//
 
+    $("a[href='#popup-contact']").magnificPopup({
+        type: "inline",
+        fixedContentPos: !1,
+        fixedBgPos: !0,
+        overflowY: "auto",
+        closeBtnInside: !0,
+        preloader: !1,
+        midClick: !0,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in",
+    });
+
     var uPhone = $('.user-phone');
     uPhone.mask("+3 8(999) 999-99-99",{autoclear: false});
 
